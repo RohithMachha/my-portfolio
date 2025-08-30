@@ -1,7 +1,9 @@
 import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 export default function About() {
   return (
+    <ScrollReveal>
     <section
       id="about"
       className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 
@@ -34,20 +36,6 @@ export default function About() {
             </ul>
           </div>
 
-          {/* Certifications */}
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
-              📜 Certifications
-            </h3>
-            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-              <li>Oracle Cloud Infrastructure (OCI) – Data Science Professional</li>
-              <li>Google Crowdsource – Top 10 (Mobile Tracking App)</li>
-              <li>Business Intelligence Analyst Internship – MedTourEasy</li>
-              <li>Data Scientist Internship (Upcoming) – Codivy Consulting</li>
-              <li>Software Development Engineering Intern – Bluestock</li>
-            </ul>
-          </div>
-
           {/* Achievements */}
           <div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
@@ -68,23 +56,14 @@ export default function About() {
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
               <li>Playing Chess ♟️</li>
               <li>Exploring AI/ML Applications 🤖</li>
-              <li>Farming & Cultivation – Saffron & Mushroom Startup 🌱</li>
+              <li>Looking for StartUp Projects</li>
               <li>Fitness & Personal Growth 💪</li>
+              <li>Reading Self & Science Books📕</li>
             </ul>
-          </div>
-
-          {/* Family */}
-          <div className="md:col-span-2">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
-              👨‍👩‍👦 Family
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300">
-              I am blessed with a supportive family who always inspires me.  
-              My father and mother’s encouragement keeps me motivated in my journey.
-            </p>
           </div>
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 }

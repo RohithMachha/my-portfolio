@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { img } from "framer-motion/client";
-
+import ScrollReveal from "./ScrollReveal";
 const projects = [
   {
     id: 1,
@@ -25,6 +25,7 @@ export default function Projects() {
   };
 
   return (
+    <ScrollReveal>
     <section id="projects" className="py-16 bg-gradient-to-b from-white to-gray-100 
              dark:from-gray-900 dark:to-gray-800 text-center">
       <h2 className="text-4xl font-bold mb-10 text-gray-900 dark:text-white">
@@ -72,5 +73,6 @@ export default function Projects() {
         ))}
       </div>
     </section>
+    </ScrollReveal>
   );
 }

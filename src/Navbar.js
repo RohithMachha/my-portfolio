@@ -5,14 +5,22 @@ import { Sun, Moon } from "lucide-react"; // nice icons
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
-  const sections = [ "About", "Projects", "Skills", "Experience", "Contact"];
+  const sections = [ "About", "Projects", "Skills", "Experience","Certifications", "Contact"];
 
   return (
+    
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 
                     bg-white/20 dark:bg-black/30 backdrop-blur-lg
                     px-6 py-3 rounded-2xl shadow-lg flex gap-4 items-center">
       
       {/* Section Buttons */}
+      <div className="flex items-center space-x-2">
+          <div className="border-l-4 border-blue-500 pl-3">
+            <h1 className="text-2xl font-bold tracking-wide text-gray-900 dark:text-white">
+              Portfolio
+            </h1>
+          </div>
+        </div>
       <div className="flex gap-4">
         {sections.map((section) => (
           <a

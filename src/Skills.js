@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import ScrollReveal from "./ScrollReveal";
 
 export default function Skills() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 
+    <ScrollReveal>
+    <section id="skills" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 
              bg-gradient-to-b from-white to-gray-100 
              dark:from-gray-900 dark:to-gray-800 
              text-gray-900 dark:text-gray-100 transition-colors duration-500">
@@ -26,16 +28,19 @@ export default function Skills() {
             </h3>
             <ul className="space-y-3 text-gray-800 dark:text-gray-200">
               <li>
-                <span className="font-semibold">Languages:</span> C, Python, SQL, Java
+                <span className="font-semibold">Languages:</span>  Python, SQL, Java, Express, React, Node Js
               </li>
               <li>
                 <span className="font-semibold">Frameworks:</span> Pandas, NumPy, Scikit-learn, Matplotlib
               </li>
               <li>
-                <span className="font-semibold">Tools:</span> Power BI, Excel, PowerPoint, Tableau, MySQL
+                <span className="font-semibold">Tools:</span> Power BI, Excel, PowerPoint, Tableau
               </li>
               <li>
                 <span className="font-semibold">Platforms:</span> Jupyter Notebook, Visual Studio Code, IntelliJ IDEA
+              </li>
+              <li>
+                <span className="font-semibold">Data Base:</span> MongoDB,MySQL
               </li>
             </ul>
           </div>
@@ -58,5 +63,6 @@ export default function Skills() {
         </div>
       </motion.div>
     </section>
+    </ScrollReveal>
   );
 }

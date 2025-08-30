@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Certifications from "./Certifications";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Experience />
       <Skills />
+      <Certifications />
       <Contact />
     </ThemeProvider>
   );

@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import ScrollReveal from "./ScrollReveal";
 
 function Hero() {
   return (
+    <ScrollReveal>
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-16 
              bg-gradient-to-b from-white to-gray-100 
              dark:from-gray-900 dark:to-gray-800 
@@ -19,7 +20,7 @@ function Hero() {
           Hey There👋, I’m <span className="text-indigo-600 dark:text-indigo-400">Rohith Machha</span>
         </h1>
         <p className="mt-4 text-lg md:text-xl font-[Inter] text-gray-600 dark:text-gray-300">
-          Data Enthusiast | Python Developer
+          Data Enthusiast → Web Developer → Python Developer
         </p>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
   "Data is not just numbers; it is the foundation for insights, decisions, and innovation."
@@ -77,6 +78,7 @@ function Hero() {
         </div>
       </motion.div>
     </section>
+    </ScrollReveal>
   );
 }
 
