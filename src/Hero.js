@@ -51,7 +51,7 @@ function Hero() {
           {/* Image wrapper with border + glow */}
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-black m-[6px]">
             <img
-              src="/passport.png"
+              src="/Passport.png"
               alt="Rohith Machha"
               className="object-cover w-full h-full"
             />
